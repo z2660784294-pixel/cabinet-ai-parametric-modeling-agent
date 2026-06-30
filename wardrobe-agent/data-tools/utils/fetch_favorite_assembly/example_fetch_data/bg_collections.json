@@ -1,0 +1,1081 @@
+{
+    "bgIdChannels": {
+    },
+    "brandGoodAuthInfos": {
+        "587294899": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587294945": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587300788": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587301842": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587303548": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587304346": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587305383": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587305582": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587306142": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587306256": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587310003": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587311067": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587313035": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "587313068": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        },
+        "601268768": {
+            "bgAppInfos": [
+            ],
+            "usable": true
+        }
+    },
+    "count": 15,
+    "data": [
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69f1df5a2691330001d09ed9",
+            "assemblyType": 1,
+            "brandGoodId": 601268768,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 31893010,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/04/29/NHY56UQKTIVEGAABAAAAAAI8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/04/29/NHY56UQKTIVEGAABAAAAAAI8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 31893010,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/04/29/NHY56UQKTIVEGAABAAAAAAI8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 3,
+            "name": "组合",
+            "obsBrandGoodId": "3FO3LSTCABUS",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/04/29/NHY56UQKTIVEGAABAAAAAAI8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 2300.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/04/29/NHY56UQKTIVEGAABAAAAAAI8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1641484642,
+            "viewType": 0,
+            "visible": true,
+            "width": "2300 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb97a9dc568300014c2c64",
+            "assemblyType": 1,
+            "brandGoodId": 587305582,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931799,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZPDYKTIWMKAABAAAAAAQ8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZPDYKTIWMKAABAAAAAAQ8.png",
+            "height": "2700 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931799,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZPDYKTIWMKAABAAAAAAQ8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 6,
+            "name": "收藏-门厅柜-014",
+            "obsBrandGoodId": "3FO3M0XSSUQC",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZPDYKTIWMKAABAAAAAAQ8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 2700.0,
+                "y": 400.0,
+                "z": 2700.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZPDYKTIWMKAABAAAAAAQ8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607727233,
+            "viewType": 0,
+            "visible": true,
+            "width": "2700 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb97a2dc568300014c2c62",
+            "assemblyType": 1,
+            "brandGoodId": 587313068,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931791,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZPIIKTJRBWAABAAAAAAY8.png",
+            "deleted": false,
+            "depth": "500 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZPIIKTJRBWAABAAAAAAY8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931791,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZPIIKTJRBWAABAAAAAAY8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 6,
+            "name": "收藏-门厅柜-013",
+            "obsBrandGoodId": "3FO3M0YPRXJ1",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZPIIKTJRBWAABAAAAAAY8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 2700.0,
+                "y": 500.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZPIIKTJRBWAABAAAAAAY8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607716941,
+            "viewType": 0,
+            "visible": true,
+            "width": "2700 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb976832a4ff0001ac8336",
+            "assemblyType": 1,
+            "brandGoodId": 587313035,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931758,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZOZYKTIWMKAABAAAAADA8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZOZYKTIWMKAABAAAAADA8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931758,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZOZYKTIWMKAABAAAAADA8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 3,
+            "name": "收藏-门厅柜-012",
+            "obsBrandGoodId": "3FO3M0YPVAK1",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZOZYKTIWMKAABAAAAADA8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 2700.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZOZYKTIWMKAABAAAAADA8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607727199,
+            "viewType": 0,
+            "visible": true,
+            "width": "2700 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb973232a4ff0001ac832b",
+            "assemblyType": 1,
+            "brandGoodId": 587306256,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931717,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZOMIKTIWMKAABAAAAACA8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZOMIKTIWMKAABAAAAACA8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931717,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZOMIKTIWMKAABAAAAACA8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 8,
+            "name": "收藏-门厅柜-011",
+            "obsBrandGoodId": "3FO3M0XV4OHI",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZOMIKTIWMKAABAAAAACA8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 2700.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZOMIKTIWMKAABAAAAACA8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607724274,
+            "viewType": 0,
+            "visible": true,
+            "width": "2700 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb96f932a4ff0001ac8324",
+            "assemblyType": 1,
+            "brandGoodId": 587311067,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931682,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZN6IKTIWMKAABAAAAAAA8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZN6IKTIWMKAABAAAAAAA8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931682,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZN6IKTIWMKAABAAAAAAA8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 3,
+            "name": "收藏-门厅柜-010",
+            "obsBrandGoodId": "3FO3M0YV9AW9",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZN6IKTIWMKAABAAAAAAA8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 2250.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZN6IKTIWMKAABAAAAAAA8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607720750,
+            "viewType": 0,
+            "visible": true,
+            "width": "2250 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb96e2dc568300014c2c46",
+            "assemblyType": 1,
+            "brandGoodId": 587301842,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931668,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNYQKTJRBWAABAAAAAAQ8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNYQKTJRBWAABAAAAAAQ8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931668,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNYQKTJRBWAABAAAAAAQ8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 4,
+            "name": "收藏-门厅柜-009",
+            "obsBrandGoodId": "3FO3M0Y630IO",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNYQKTJRBWAABAAAAAAQ8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 2250.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNYQKTJRBWAABAAAAAAQ8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607717875,
+            "viewType": 0,
+            "visible": true,
+            "width": "2250 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb96ce32a4ff0001ac831f",
+            "assemblyType": 1,
+            "brandGoodId": 587303548,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931654,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNTIKTIWMKAABAAAAABA8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNTIKTIWMKAABAAAAABA8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931654,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNTIKTIWMKAABAAAAABA8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 2,
+            "name": "收藏-门厅柜-008",
+            "obsBrandGoodId": "3FO3M0XYD6RG",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNTIKTIWMKAABAAAAABA8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 1350.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNTIKTIWMKAABAAAAABA8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607711725,
+            "viewType": 0,
+            "visible": true,
+            "width": "1350 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb969cdc568300014c2c36",
+            "assemblyType": 1,
+            "brandGoodId": 587300788,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931612,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNGYKTIWMKAABAAAAADI8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNGYKTIWMKAABAAAAADI8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931612,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNGYKTIWMKAABAAAAADI8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 6,
+            "name": "收藏-门厅柜-007",
+            "obsBrandGoodId": "3FO3M0UKDOCY",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNGYKTIWMKAABAAAAADI8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 2250.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZNGYKTIWMKAABAAAAADI8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607722246,
+            "viewType": 0,
+            "visible": true,
+            "width": "2250 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb967332a4ff0001ac8312",
+            "assemblyType": 1,
+            "brandGoodId": 587305383,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931586,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZM4QKTIWMKAABAAAAADI8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZM4QKTIWMKAABAAAAADI8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931586,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZM4QKTIWMKAABAAAAADI8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 5,
+            "name": "收藏-门厅柜-006",
+            "obsBrandGoodId": "3FO3M0XSM3CB",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZM4QKTIWMKAABAAAAADI8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 2700.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZM4QKTIWMKAABAAAAADI8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607717600,
+            "viewType": 0,
+            "visible": true,
+            "width": "2700 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb9658dc568300014c2c2e",
+            "assemblyType": 1,
+            "brandGoodId": 587306142,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931568,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMWAKTJRBWAABAAAAABA8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMWAKTJRBWAABAAAAABA8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931568,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMWAKTJRBWAABAAAAABA8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 7,
+            "name": "收藏-门厅柜-005",
+            "obsBrandGoodId": "3FO3M0XURN6W",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMWAKTJRBWAABAAAAABA8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 3150.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMWAKTJRBWAABAAAAABA8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607724145,
+            "viewType": 0,
+            "visible": true,
+            "width": "3150 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb963adc568300014c2c29",
+            "assemblyType": 1,
+            "brandGoodId": 587310003,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931549,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMOIKTIWMKAABAAAAACY8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMOIKTIWMKAABAAAAACY8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931549,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMOIKTIWMKAABAAAAACY8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 6,
+            "name": "收藏-门厅柜-004",
+            "obsBrandGoodId": "3FO3M0YSIR8O",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMOIKTIWMKAABAAAAACY8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 1800.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMOIKTIWMKAABAAAAACY8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607707892,
+            "viewType": 0,
+            "visible": true,
+            "width": "1800 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb9617dc568300014c2c25",
+            "assemblyType": 1,
+            "brandGoodId": 587304346,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931531,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZLYIKTIWMKAABAAAAABA8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZLYIKTIWMKAABAAAAABA8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931531,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZLYIKTIWMKAABAAAAABA8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 8,
+            "name": "收藏-门厅柜-002",
+            "obsBrandGoodId": "3FO3M0Y235DU",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZLYIKTIWMKAABAAAAABA8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 2250.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZLYIKTIWMKAABAAAAABA8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607713589,
+            "viewType": 0,
+            "visible": true,
+            "width": "2250 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb9605dc568300014c2c21",
+            "assemblyType": 1,
+            "brandGoodId": 587294945,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931520,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMAIKTKHWUAABAAAAALY8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMAIKTKHWUAABAAAAALY8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931520,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMAIKTKHWUAABAAAAALY8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 3,
+            "name": "收藏-门厅柜-003",
+            "obsBrandGoodId": "3FO3M0UQJOEK",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMAIKTKHWUAABAAAAALY8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 1800.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZMAIKTKHWUAABAAAAALY8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607717542,
+            "viewType": 0,
+            "visible": true,
+            "width": "1800 (mm)"
+        },
+        {
+            "accessControl": 1,
+            "assembly": true,
+            "assemblyCollectionDataId": "69bb95a0dc568300014c2c12",
+            "assemblyType": 1,
+            "brandGoodId": 587294899,
+            "chargeUnit": "个",
+            "collected": true,
+            "collectionId": 30931468,
+            "coverImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZLHQKTKHWUAABAAAAADA8.png",
+            "deleted": false,
+            "depth": "400 (mm)",
+            "dimensions": "",
+            "frontImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZLHQKTKHWUAABAAAAADA8.png",
+            "height": "2400 (mm)",
+            "imgs": [
+            ],
+            "itemId": 30931468,
+            "largeImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZLHQKTKHWUAABAAAAADA8.png",
+            "mainProducts": [
+            ],
+            "modelCnt": 6,
+            "name": "收藏-门厅柜-001",
+            "obsBrandGoodId": "3FO3M0UQO37V",
+            "onSale": true,
+            "paramCategoryTypePos": [
+                66,
+                67,
+                5,
+                21
+            ],
+            "previewImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZLHQKTKHWUAABAAAAADA8.png",
+            "prodCatId": 814,
+            "productNumber": "",
+            "productType": "INSTANCE_ASSEMBLY",
+            "ready": true,
+            "size": {
+                "x": 2200.0,
+                "y": 400.0,
+                "z": 2400.0
+            },
+            "source": 6,
+            "topImgUrl": "//qhcustomoss.kujiale.com/assemblycollectionimage/2026/03/19/NG5ZLHQKTKHWUAABAAAAADA8.png",
+            "type": 15,
+            "userId": 40576254,
+            "userProdCollectionId": 1607718449,
+            "viewType": 0,
+            "visible": true,
+            "width": "2200 (mm)"
+        }
+    ],
+    "modelStatusInfos": {
+    },
+    "privateBgIds": [
+    ],
+    "productExtras": {
+        "587294899": {
+            "brandGoodId": 587294899,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587294899,
+                "childrenChannels": {
+                    "46A89C55-F623-4E91-9DA3-6DECE053B49A": "1_0_3FO4K7OFURO5",
+                    "6A0B0BFB-4394-4EDC-AA2C-628735EB5FD9": "1_0_3FO4K7OFURO5",
+                    "81A84558-BC2C-4C5E-A067-F6D9405903CA": "1_0_3FO4K7OFURO5",
+                    "9C2C8892-918A-4884-9673-D0B8F87AF755": "1_0_3FO4K7OFURO5",
+                    "C7EBCC89-C19A-45EB-A7FB-4C4558D6674E": "1_0_3FO4K7OFURO5",
+                    "D7B8484A-1170-49B6-8DB5-B5CE82FF7D93": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587294945": {
+            "brandGoodId": 587294945,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587294945,
+                "childrenChannels": {
+                    "8DB54E16-526A-4C41-A05B-C394DFFD065F": "1_0_3FO4K7OFURO5",
+                    "A3336081-716A-4CDE-82C7-AC54C697E886": "1_0_3FO4K7OFURO5",
+                    "E33B900F-8EE5-4540-83F5-964F8CAF3A6C": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587300788": {
+            "brandGoodId": 587300788,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587300788,
+                "childrenChannels": {
+                    "0160C6C3-2DC7-436C-BF57-EE56D5900C6D": "1_0_3FO4K7OFURO5",
+                    "1A225457-00CC-49BA-A424-FF98ACD32AB5": "1_0_3FO4K7OFURO5",
+                    "3EE614A0-DC4F-4FE8-B63C-40C5A3EADF58": "1_0_3FO4K7OFURO5",
+                    "8960D9E3-C721-40CE-9258-6E94B7A84B52": "1_0_3FO4K7OFURO5",
+                    "986B9CCB-9916-41F2-B4D7-9199FC0C1923": "1_0_3FO4K7OFURO5",
+                    "C0B6DC94-FF87-4778-97F9-D315CAD49D57": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587301842": {
+            "brandGoodId": 587301842,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587301842,
+                "childrenChannels": {
+                    "045B886A-82A0-46D4-8722-5BA095415DE0": "1_0_3FO4K7OFURO5",
+                    "69EF942E-86BA-4B01-811B-BE936D0C2403": "1_0_3FO4K7OFURO5",
+                    "ADFC8EB6-06AD-4AEA-AEAA-6AFA0327879B": "1_0_3FO4K7OFURO5",
+                    "F8C18AF8-964C-4A12-9703-D38BA1DD3164": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587303548": {
+            "brandGoodId": 587303548,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587303548,
+                "childrenChannels": {
+                    "70F9BB48-683C-4709-BAA0-221BE5F6A879": "1_0_3FO4K7OFURO5",
+                    "D6CC871D-795D-4C58-B7C6-F85E94064978": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587304346": {
+            "brandGoodId": 587304346,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587304346,
+                "childrenChannels": {
+                    "104C3E75-9AA9-4649-9E40-2B0A2CABC523": "1_0_3FO4K7OFURO5",
+                    "7358A1AA-5413-4B46-90F9-3FF6A5D70FB8": "1_0_3FO4K7OFURO5",
+                    "9E1A4369-BD04-495A-9513-EF53C30DEBB7": "1_0_3FO4K7OFURO5",
+                    "B74B8E06-CDB5-402A-8E62-DE2B66547037": "1_0_3FO4K7OFURO5",
+                    "BEB93E0F-8051-4191-95C8-5B2BB04E5A04": "1_0_3FO4K7OFURO5",
+                    "D16FBC2F-881A-462C-91FA-5C01E14CA1F7": "1_0_3FO4K7OFURO5",
+                    "E48DAC31-FD74-4D67-9E96-DF39DF764DDA": "1_0_3FO4K7OFURO5",
+                    "FA33FE8E-5749-4B5C-8CB8-F10ABCE1CF81": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587305383": {
+            "brandGoodId": 587305383,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587305383,
+                "childrenChannels": {
+                    "08CA9E7B-3AD4-41EB-907A-A530F44A7B54": "1_0_3FO4K7OFURO5",
+                    "1DA607E7-F7D0-4219-AB71-2E07B859FE6A": "1_0_3FO4K7OFURO5",
+                    "2DFEA121-7879-4940-AB1A-4EF1038B1B00": "1_0_3FO4K7OFURO5",
+                    "775495F1-7C30-430C-95CA-E519F09B2BEC": "1_0_3FO4K7OFURO5",
+                    "85163034-2042-42D3-817A-B51CD4662D27": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587305582": {
+            "brandGoodId": 587305582,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587305582,
+                "childrenChannels": {
+                    "0662ECFD-3990-4396-8942-6C0E45FF7317": "1_0_3FO4K7OFURO5",
+                    "07ADDE8D-0AB5-4BEE-9C88-9058B2E6E25B": "1_0_3FO4K7OFURO5",
+                    "15507960-DE4A-4ACF-B6A5-B445F5242638": "1_0_3FO4K7OFURO5",
+                    "44BD624B-F313-4E84-983A-02A65207B237": "1_0_3FO4K7OFURO5",
+                    "4DE0E3B0-47C6-4C36-A2FA-989AFFD6E353": "1_0_3FO4K7OFURO5",
+                    "696EBD72-5BD6-43FF-9EB6-72382A4A47B2": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587306142": {
+            "brandGoodId": 587306142,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587306142,
+                "childrenChannels": {
+                    "054C275A-884A-4C5A-9713-9BB363DF41E1": "1_0_3FO4K7OFURO5",
+                    "2D350E2C-5DA0-497F-9D89-8293154724C3": "1_0_3FO4K7OFURO5",
+                    "436A757B-A6E0-4CBE-86AF-3B639E63A58B": "1_0_3FO4K7OFURO5",
+                    "6698031A-FA5E-4167-8625-34C3956AE4C7": "1_0_3FO4K7OFURO5",
+                    "8E8F7182-D111-4B82-A173-0CEA61432268": "1_0_3FO4K7OFURO5",
+                    "9663CB04-C998-4670-BE58-50AAB3A60D0C": "1_0_3FO4K7OFURO5",
+                    "9B261A2D-E034-40DA-8707-C47C566CBF99": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587306256": {
+            "brandGoodId": 587306256,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587306256,
+                "childrenChannels": {
+                    "256B10FB-6647-448F-A4EB-7ACBFA14E6F7": "1_0_3FO4K7OFURO5",
+                    "2CDEA5FE-13DD-453E-A622-A6486CCE3F8D": "1_0_3FO4K7OFURO5",
+                    "303DC793-CDBD-4022-A0E1-3732CDEFB09B": "1_0_3FO4K7OFURO5",
+                    "64611385-9312-4108-8EFB-7FC51A1059E4": "1_0_3FO4K7OFURO5",
+                    "7CA6F03C-8119-495F-AC4F-BBD2EB9126D9": "1_0_3FO4K7OFURO5",
+                    "8341EEBD-DF93-4C08-B578-B37AA1ED7337": "1_0_3FO4K7OFURO5",
+                    "B2A114CD-DA83-4A02-A468-C2BEC0B231DB": "1_0_3FO4K7OFURO5",
+                    "EA670CE4-4AB3-4251-8CCE-BB85C3F7847A": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587310003": {
+            "brandGoodId": 587310003,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587310003,
+                "childrenChannels": {
+                    "05962E15-0CC7-4C04-9E4A-37C703613BE9": "1_0_3FO4K7OFURO5",
+                    "1308F18A-6B26-4C11-B394-02F533552CA2": "1_0_3FO4K7OFURO5",
+                    "77BEF9C8-8807-4795-971F-947685B142E3": "1_0_3FO4K7OFURO5",
+                    "791448E4-C076-40F2-AE22-1C35C6C12170": "1_0_3FO4K7OFURO5",
+                    "9EA96ECF-1690-4D59-A9A1-008B7771340D": "1_0_3FO4K7OFURO5",
+                    "ADA65621-0F1A-4A10-B762-B17EB2CE4A4E": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587311067": {
+            "brandGoodId": 587311067,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587311067,
+                "childrenChannels": {
+                    "1478C293-DB30-43A7-9028-598E94E780A4": "1_0_3FO4K7OFURO5",
+                    "4108229E-1BE4-4599-9D44-D2DD0CB609CA": "1_0_3FO4K7OFURO5",
+                    "4EB21751-2704-494B-8DB3-D50E8DA8DCDE": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587313035": {
+            "brandGoodId": 587313035,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587313035,
+                "childrenChannels": {
+                    "17564133-B877-412F-B203-AD19C21BBDC7": "1_0_3FO4K7OFURO5",
+                    "3593B10E-F6B9-4C15-90A1-7D6C4FCE579B": "1_0_3FO4K7OFURO5",
+                    "F41BE045-F366-479E-9521-619B5DAF0C86": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "587313068": {
+            "brandGoodId": 587313068,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 587313068,
+                "childrenChannels": {
+                    "0783E2A2-6938-448E-AEC5-5868C62458E2": "1_0_3FO4K7OFURO5",
+                    "11C05FB5-C774-4FAA-8132-5F09FA1A01AE": "1_0_3FO4K7OFURO5",
+                    "72E39039-9BFB-4BD2-9959-231FEDD4C83F": "1_0_3FO4K7OFURO5",
+                    "87BAE4F9-C1D5-4D70-85DB-24134612DAF9": "1_0_3FO4K7OFURO5",
+                    "8B262631-754B-45B0-ABC4-D56E316D933B": "1_0_3FO4K7OFURO5",
+                    "F1FF0FE7-0FE3-4BCA-866B-5B5203F7C9D4": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        },
+        "601268768": {
+            "brandGoodId": 601268768,
+            "channelVo": {
+                "bgChannel": "1_0_3FO4K7OFURO5",
+                "bgId": 601268768,
+                "childrenChannels": {
+                    "62DD0B53-62F8-45F7-AA77-D9293A79181A": "1_0_3FO4K7OFURO5",
+                    "7BE4578D-A068-4B8B-8343-00A0E1DA0761": "1_0_3FO4K7OFURO5",
+                    "DB8AB77C-04A8-4F9E-A7F7-AF8499B2235E": "1_0_3FO4K7OFURO5"
+                }
+            },
+            "delisted": false,
+            "test": false
+        }
+    }
+}

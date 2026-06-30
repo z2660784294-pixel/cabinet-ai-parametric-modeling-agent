@@ -1,0 +1,14 @@
+# Runner 临时目录（每次 run 隔离）
+.tmp/
+
+# Spike 运行产物（JSON/日志体积大，结构由 .gitkeep 保留）
+spike/output/run1/*
+!spike/output/run1/.gitkeep
+spike/output/run2/*
+!spike/output/run2/.gitkeep
+spike/output/diff/*
+!spike/output/diff/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]

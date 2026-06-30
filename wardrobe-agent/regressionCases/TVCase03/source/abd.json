@@ -1,0 +1,191 @@
+{
+  "designId": "3FO3B0DBCXDU",
+  "name": "收藏-电视柜-003",
+  "obsCollectBrandGoodId": "3FO3M0YRRV3X",
+  "id": "A6ACC328-F361-43DA-A9CE-DF5456A1D9FF",
+  "units": [
+    {
+      "name": "4号柜",
+      "obsBrandGoodId": "3FO3PVSQ07OE",
+      "modelBrandGoodName": "【开放柜】V1",
+      "id": "CD594329-B58A-4212-A6C4-2824B1495301",
+      "position": {
+        "x": -1350,
+        "y": 200,
+        "z": -550
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 1800,
+        "y": 400,
+        "z": 1200
+      }
+    },
+    {
+      "name": "【通用收口-智】V1",
+      "obsBrandGoodId": "3FO3JYMG5N1F",
+      "modelBrandGoodName": "【通用收口-智】V1",
+      "id": "F8D12B49-D028-4767-B9E8-E94E983036E2",
+      "position": {
+        "x": -1800,
+        "y": 200,
+        "z": -1200
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "name": "1号柜",
+      "obsBrandGoodId": "3FO3PVPLUOA3",
+      "modelBrandGoodName": "【1门吊柜】V1",
+      "id": "01DE5556-8937-4610-AF90-788353007E98",
+      "position": {
+        "x": -1800,
+        "y": 200,
+        "z": -550
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 450,
+        "y": 418,
+        "z": 1750
+      }
+    },
+    {
+      "name": "2号柜",
+      "obsBrandGoodId": "3FO3PVSQRFMJ",
+      "modelBrandGoodName": "【4门吊柜】V1",
+      "id": "B5FC768D-40D2-4FAC-9299-D7FB5B3FDD3E",
+      "position": {
+        "x": -1350,
+        "y": 200,
+        "z": 650
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 1800,
+        "y": 418,
+        "z": 550
+      }
+    },
+    {
+      "name": "5号柜",
+      "obsBrandGoodId": "3FO3PUVHIOF3",
+      "modelBrandGoodName": "【4门台面柜】V1",
+      "id": "8CBC82B4-5DFE-4D7F-9537-C7A11B5EDFDF",
+      "position": {
+        "x": -1800,
+        "y": 200,
+        "z": -1200
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 1800,
+        "y": 420,
+        "z": 450
+      }
+    },
+    {
+      "name": "3号柜",
+      "obsBrandGoodId": "3FO3PVS13K0P",
+      "modelBrandGoodName": "【3门吊柜】V1",
+      "id": "CD16B484-EB2D-402D-90A8-E045C95C8873",
+      "position": {
+        "x": 450,
+        "y": 200,
+        "z": -550
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 1350,
+        "y": 418,
+        "z": 1750
+      }
+    },
+    {
+      "name": "6号柜",
+      "obsBrandGoodId": "3FO3PUVHIOF3",
+      "modelBrandGoodName": "【4门台面柜】V1",
+      "id": "41940B85-1F68-4CC6-AE92-CFFB97503C6A",
+      "position": {
+        "x": 0,
+        "y": 200,
+        "z": -1200
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 1800,
+        "y": 420,
+        "z": 450
+      }
+    }
+  ],
+  "use_current": true
+}

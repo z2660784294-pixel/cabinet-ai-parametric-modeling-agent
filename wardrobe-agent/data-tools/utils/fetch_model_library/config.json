@@ -1,0 +1,23 @@
+{
+  "apiBaseUrl": "https://yun-beta.kujiale.com",
+  "toolType": "wardrobe",
+  "toolTypePos": 5,
+  "libraryId": "",
+  "sceneId": null,
+  "locale": "zh_CN",
+  "positionDescriptions": {
+    "wardrobe_inner_component": "内部组件库",
+    "wardrobe_outer_component": "组件模式库",
+    "wardrobe_texture": "材质库",
+    "wardrobe_bool": "布尔模型库",
+    "wardrobe_semi_manufactures": "半成品库",
+    "wardrobe_connect_assembly": "装配库",
+    "wardrobe_assembly": "柜体组合库",
+    "wardrobe_param_molding": "线条库",
+    "wardrobe_unclassified": "未分类模型",
+    "wardrobe_virtual": "虚拟模型库",
+    "wardrobe_accessory": "配件库",
+    "wardrobe": "柜体模式库"
+  },
+  "brandGoodStages": [0, 1, 2]
+}

@@ -1,0 +1,191 @@
+{
+  "designId": "3FO3B0DBCXDU",
+  "name": "收藏-电视柜-002",
+  "obsCollectBrandGoodId": "3FO3M0WRTG3O",
+  "id": "BED779F5-198D-457D-B958-1A41E4CFBD71",
+  "units": [
+    {
+      "name": "4号柜",
+      "obsBrandGoodId": "3FO3PVSQ07OE",
+      "modelBrandGoodName": "【开放柜】V1",
+      "id": "34AFFC65-2642-4385-849B-64F3CCFCA3A6",
+      "position": {
+        "x": 450,
+        "y": 200,
+        "z": -750
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 900,
+        "y": 400,
+        "z": 1150
+      }
+    },
+    {
+      "name": "3号柜",
+      "obsBrandGoodId": "3FO3PVPV2PSE",
+      "modelBrandGoodName": "【2门吊柜】V1",
+      "id": "82475DBA-5D77-4331-9D63-5B0576885CDE",
+      "position": {
+        "x": 450,
+        "y": 200,
+        "z": 400
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 900,
+        "y": 418,
+        "z": 800
+      }
+    },
+    {
+      "name": "【替换墙板】V0",
+      "obsBrandGoodId": "3FO3Q5WFSS8R",
+      "modelBrandGoodName": "【替换墙板】V0",
+      "id": "671D85DB-39D7-43A1-805D-4E905D066345",
+      "position": {
+        "x": -900,
+        "y": 200,
+        "z": -750
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 1350,
+        "y": 18,
+        "z": 1150
+      }
+    },
+    {
+      "name": "5号柜",
+      "obsBrandGoodId": "3FO3PV1MAW4W",
+      "modelBrandGoodName": "【4门台面柜】1V1",
+      "id": "643122A0-BA48-4686-8014-E85803D53F12",
+      "position": {
+        "x": -900,
+        "y": 200,
+        "z": -1200
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 2250,
+        "y": 420,
+        "z": 450
+      }
+    },
+    {
+      "name": "1号柜",
+      "obsBrandGoodId": "3FO3PVT9KS3Y",
+      "modelBrandGoodName": "【1门常规高柜】V1",
+      "id": "405206E0-0B16-41F2-8934-A022E006597F",
+      "position": {
+        "x": -1350,
+        "y": 200,
+        "z": -1200
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 450,
+        "y": 418,
+        "z": 2400
+      }
+    },
+    {
+      "name": "2号柜",
+      "obsBrandGoodId": "3FO3PVS13K0P",
+      "modelBrandGoodName": "【3门吊柜】V1",
+      "id": "120D4C49-DA53-45A2-B724-FC7CF7BF43C3",
+      "position": {
+        "x": -900,
+        "y": 200,
+        "z": 400
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 1350,
+        "y": 418,
+        "z": 800
+      }
+    },
+    {
+      "name": "【通用收口-智】V1",
+      "obsBrandGoodId": "3FO3JYMG5N1F",
+      "modelBrandGoodName": "【通用收口-智】V1",
+      "id": "E7EABB48-1E56-4C89-B683-878D98A89CB7",
+      "position": {
+        "x": -1350,
+        "y": 200,
+        "z": -1200
+      },
+      "rotate": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "size": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    }
+  ],
+  "use_current": true
+}

@@ -1,0 +1,42 @@
+# Local secrets and environment
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+.next/
+coverage/
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Local runtime output
+tmp/
+logs/
+*.log
+cache/
+locks/
+
+# Editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Agent/local tool state
+.claude/
+.cursor/
+.codex/
+.agents/

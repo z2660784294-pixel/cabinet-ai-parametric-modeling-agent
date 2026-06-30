@@ -1,0 +1,5 @@
+# 批量运行汇总
+.runs/
+
+# 每次运行的输出（runner 运行时会自动创建 result/）
+*/result/

@@ -1,0 +1,398 @@
+{
+  "name": "收藏-电视柜-001",
+  "parentParams": [
+    {
+      "displayName": "组合柜总宽",
+      "max": "4000",
+      "min": "1",
+      "name": "W",
+      "paramTypeId": 1,
+      "value": "2400",
+      "valueType": "float"
+    },
+    {
+      "displayName": "组合柜总深",
+      "max": "1200",
+      "min": "1",
+      "name": "D",
+      "paramTypeId": 1,
+      "value": "420",
+      "valueType": "float"
+    },
+    {
+      "displayName": "组合柜总高",
+      "max": "3000",
+      "min": "1",
+      "name": "H",
+      "paramTypeId": 1,
+      "value": "2400",
+      "valueType": "float"
+    },
+    {
+      "displayName": "外观镜像",
+      "name": "WGJX",
+      "paramTypeId": 2,
+      "value": "左",
+      "valueType": "string",
+      "editorOptions": [
+        {
+          "name": "左",
+          "value": "左"
+        },
+        {
+          "name": "右",
+          "value": "右"
+        }
+      ]
+    },
+    {
+      "displayName": "柜体板厚",
+      "max": "100",
+      "min": "3",
+      "name": "ST",
+      "paramTypeId": 1,
+      "value": "18",
+      "valueType": "float"
+    },
+    {
+      "displayName": "脚线高度",
+      "max": "1000",
+      "min": "0",
+      "name": "TH",
+      "paramTypeId": 1,
+      "value": "80",
+      "valueType": "int"
+    },
+    {
+      "displayName": "基础材质",
+      "name": "CZ",
+      "paramTypeId": 0,
+      "value": "3FO446UKPKPA",
+      "valueType": "material"
+    },
+    {
+      "displayName": "柜门材质",
+      "name": "GMCZ",
+      "paramTypeId": 0,
+      "value": "3FO446UKPKPA",
+      "valueType": "material"
+    },
+    {
+      "displayName": "顶收口高度",
+      "max": "300",
+      "min": "0",
+      "name": "SK_T",
+      "paramTypeId": 1,
+      "value": "0",
+      "valueType": "float"
+    },
+    {
+      "displayName": "左收口样式",
+      "name": "SKYS_L",
+      "paramTypeId": 2,
+      "value": "无",
+      "valueType": "string",
+      "editorOptions": [
+        {
+          "name": "无",
+          "value": "无"
+        },
+        {
+          "name": "有",
+          "value": "有"
+        },
+        {
+          "name": "见光板",
+          "value": "见光板"
+        },
+        {
+          "name": "侧收口",
+          "value": "侧收口"
+        }
+      ]
+    },
+    {
+      "displayName": "右收口样式",
+      "name": "SKYS_R",
+      "paramTypeId": 2,
+      "value": "无",
+      "valueType": "string",
+      "editorOptions": [
+        {
+          "name": "无",
+          "value": "无"
+        },
+        {
+          "name": "有",
+          "value": "有"
+        },
+        {
+          "name": "见光板",
+          "value": "见光板"
+        },
+        {
+          "name": "侧收口",
+          "value": "侧收口"
+        }
+      ]
+    },
+    {
+      "displayName": "左收口宽度",
+      "formula": "#SKYS_L=='无'?0:#SKYS_L=='有'?50:18",
+      "name": "SK_L",
+      "paramTypeId": 5,
+      "value": "",
+      "valueType": "float"
+    },
+    {
+      "displayName": "右收口宽度",
+      "formula": "#SKYS_R=='无'?0:#SKYS_R=='有'?50:18",
+      "name": "SK_R",
+      "paramTypeId": 5,
+      "value": "",
+      "valueType": "float"
+    },
+    {
+      "displayName": "左侧高柜宽",
+      "formula": "400",
+      "formulaForm": 0,
+      "max": "1200",
+      "min": "200",
+      "name": "QYW1",
+      "paramTypeId": 4,
+      "status": 1,
+      "value": "400",
+      "valueType": "float"
+    },
+    {
+      "displayName": "中部台面柜宽",
+      "formula": "(#W-#QYW1)",
+      "formulaForm": 0,
+      "max": "2400",
+      "min": "200",
+      "name": "QYW2",
+      "paramTypeId": 4,
+      "status": 1,
+      "value": "2000",
+      "valueType": "float"
+    },
+    {
+      "displayName": "左上吊柜宽",
+      "formula": "1600",
+      "formulaForm": 0,
+      "max": "2400",
+      "min": "200",
+      "name": "QYW3",
+      "paramTypeId": 4,
+      "status": 1,
+      "value": "1600",
+      "valueType": "float"
+    },
+    {
+      "displayName": "右侧吊柜宽",
+      "formula": "(#W-#QYW2)",
+      "formulaForm": 0,
+      "max": "1200",
+      "min": "200",
+      "name": "QYW4",
+      "paramTypeId": 4,
+      "status": 1,
+      "value": "400",
+      "valueType": "float"
+    },
+    {
+      "displayName": "上层四门吊柜高",
+      "formula": "750",
+      "formulaForm": 0,
+      "max": "2000",
+      "min": "100",
+      "name": "QYH1",
+      "paramTypeId": 4,
+      "status": 1,
+      "value": "750",
+      "valueType": "float"
+    },
+    {
+      "displayName": "框架吊柜高",
+      "formula": "1000",
+      "formulaForm": 0,
+      "max": "2400",
+      "min": "100",
+      "name": "QYH2",
+      "paramTypeId": 4,
+      "status": 1,
+      "value": "1000",
+      "valueType": "float"
+    },
+    {
+      "displayName": "台面柜高",
+      "formula": "450",
+      "formulaForm": 0,
+      "max": "1200",
+      "min": "100",
+      "name": "QYH3",
+      "paramTypeId": 4,
+      "status": 1,
+      "value": "450",
+      "valueType": "float"
+    },
+    {
+      "displayName": "右侧吊柜高",
+      "formula": "(#H-#QYH3-#SK_T)",
+      "formulaForm": 0,
+      "max": "2400",
+      "min": "100",
+      "name": "QYH4",
+      "paramTypeId": 4,
+      "status": 1,
+      "value": "1750",
+      "valueType": "float"
+    }
+  ],
+  "units": [
+    {
+      "label": "1号柜【1门常规高柜】V1",
+      "id": "877C1B7D-89A7-411C-84FB-1FC27DAE42E1",
+      "obsBrandGoodId": "3FO3PVT9KS3Y",
+      "paramSuffix": "1",
+      "position": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotation": [
+        "0",
+        "0",
+        "0"
+      ],
+      "size": {
+        "W": "#QYW1",
+        "D": "(#D-2)",
+        "H": "#H"
+      },
+      "paramOverrides": {
+        "materialBrandGoodId": "#CZ"
+      }
+    },
+    {
+      "label": "5号柜【6门台面柜】V1",
+      "id": "563923BF-2A21-4ED3-97D8-BA020885C2B3",
+      "obsBrandGoodId": "3FO3PVPS2TG1",
+      "paramSuffix": "2",
+      "position": [
+        "#QYW1",
+        "0",
+        "0"
+      ],
+      "rotation": [
+        "0",
+        "0",
+        "0"
+      ],
+      "size": {
+        "W": "#QYW2",
+        "D": "#D",
+        "H": "#QYH3"
+      },
+      "paramOverrides": {
+        "materialBrandGoodId": "#CZ"
+      }
+    },
+    {
+      "label": "2号柜【4门吊柜】V1",
+      "id": "DC1536E9-EB6C-460F-AC4B-2C9537BF43BF",
+      "obsBrandGoodId": "3FO3PVSQRFMJ",
+      "paramSuffix": "3",
+      "position": [
+        "#QYW1",
+        "0",
+        "(#H-#QYH1)"
+      ],
+      "rotation": [
+        "0",
+        "0",
+        "0"
+      ],
+      "size": {
+        "W": "#QYW3",
+        "D": "(#D-2)",
+        "H": "#QYH1"
+      },
+      "paramOverrides": {
+        "materialBrandGoodId": "#CZ"
+      }
+    },
+    {
+      "label": "4号柜【框架吊柜】V1",
+      "id": "ED852642-7512-4295-8035-F538FDE38201",
+      "obsBrandGoodId": "3FO3PVSW7G7D",
+      "paramSuffix": "4",
+      "position": [
+        "#QYW1",
+        "0",
+        "#QYH3"
+      ],
+      "rotation": [
+        "0",
+        "0",
+        "0"
+      ],
+      "size": {
+        "W": "#QYW3",
+        "D": "#D",
+        "H": "#QYH2"
+      },
+      "paramOverrides": {
+        "materialBrandGoodId": "#CZ"
+      }
+    },
+    {
+      "label": "3号柜【1门吊柜】V1",
+      "id": "82E66A1A-0EA4-46E3-A0A7-87024796F7D3",
+      "obsBrandGoodId": "3FO3PVPLUOA3",
+      "paramSuffix": "5",
+      "position": [
+        "(#QYW1+#QYW3)",
+        "0",
+        "#QYH3"
+      ],
+      "rotation": [
+        "0",
+        "0",
+        "0"
+      ],
+      "size": {
+        "W": "#QYW4",
+        "D": "(#D-2)",
+        "H": "#QYH4"
+      },
+      "paramOverrides": {
+        "materialBrandGoodId": "#CZ"
+      }
+    },
+    {
+      "label": "【通用收口-智】V1",
+      "id": "C12A8D10-6F62-4785-A603-25580144FF18",
+      "obsBrandGoodId": "3FO3JYMG5N1F",
+      "paramSuffix": "6",
+      "position": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotation": [
+        "0",
+        "0",
+        "0"
+      ],
+      "size": {
+        "W": "0",
+        "D": "0",
+        "H": "0"
+      },
+      "paramOverrides": {
+        "ignore": "true"
+      }
+    }
+  ]
+}

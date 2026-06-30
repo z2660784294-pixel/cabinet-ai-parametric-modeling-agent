@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>收藏夹 → 商品 → Assembly</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --panel: #1a2332;
+      --border: #2d3a4f;
+      --text: #e7ecf3;
+      --muted: #9fb0c8;
+      --accent: #5b9fd8;
+      --danger: #e57373;
+      --mono: ui-monospace, "Cascadia Mono", "Consolas", monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--panel);
+    }
+    header h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+    header p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    main {
+      display: grid;
+      grid-template-columns: minmax(220px, 280px) minmax(300px, 420px) minmax(340px, 1fr);
+      gap: 0;
+      min-height: calc(100vh - 72px);
+    }
+    @media (max-width: 960px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+    section {
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      min-height: 200px;
+    }
+    section:last-child { border-right: none; }
+    .sec-head {
+      padding: 0.65rem 0.85rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      background: rgba(0,0,0,.15);
+    }
+    .sec-body {
+      flex: 1;
+      overflow: auto;
+      padding: 0.5rem;
+    }
+    label.row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      margin-bottom: 0.65rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    input[type="text"], textarea {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      padding: 0.45rem 0.55rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #121922;
+      color: var(--text);
+      width: 100%;
+    }
+    textarea { min-height: 140px; resize: vertical; }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+      margin-bottom: 0.65rem;
+    }
+    button {
+      font: inherit;
+      cursor: pointer;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #243044;
+      color: var(--text);
+      padding: 0.4rem 0.75rem;
+      font-size: 0.85rem;
+    }
+    button.primary {
+      background: var(--accent);
+      border-color: #4a8bc2;
+      color: #0c141c;
+      font-weight: 600;
+    }
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+    label.chk {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      user-select: none;
+    }
+    ul.items {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul.items li button.item {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 0.35rem;
+      padding: 0.55rem 0.65rem;
+      border-radius: 8px;
+      background: #151d28;
+      border: 1px solid transparent;
+      line-height: 1.35;
+    }
+    ul.items li button.item:hover {
+      border-color: var(--border);
+    }
+    ul.items li button.item.active {
+      border-color: var(--accent);
+      background: #1c2a3d;
+    }
+    ul.items li button.item.goods-item {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.45rem 0.55rem;
+    }
+    .goods-thumb-wrap {
+      flex: 0 0 auto;
+      width: 64px;
+      height: 64px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #0d1118;
+      border: 1px solid var(--border);
+    }
+    .goods-thumb-wrap img.goods-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .goods-thumb-wrap.placeholder-thumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      line-height: 1.2;
+      text-align: center;
+      color: var(--muted);
+      padding: 0.2rem;
+    }
+    .goods-meta {
+      flex: 1;
+      min-width: 0;
+      text-align: left;
+    }
+    .item-title { font-weight: 600; font-size: 0.88rem; }
+    .item-sub {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-family: var(--mono);
+    }
+    .status {
+      font-size: 0.78rem;
+      padding: 0.45rem 0.55rem;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .status.err {
+      background: rgba(229,115,115,.12);
+      border: 1px solid rgba(229,115,115,.35);
+      color: #ffcdd2;
+    }
+    .hint-login {
+      margin-top: 0.35rem;
+      margin-bottom: 0.65rem;
+    }
+    .toolbar-login {
+      margin-bottom: 0;
+    }
+    .status.ok {
+      background: rgba(91,159,216,.12);
+      border: 1px solid rgba(91,159,216,.25);
+      color: #bbdefb;
+    }
+    pre.json-out {
+      margin: 0;
+      padding: 0.65rem;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      line-height: 1.45;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .placeholder {
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 0.5rem;
+    }
+    .hint {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.35rem;
+    }
+    .col3-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      flex: 1;
+      min-height: 0;
+    }
+    .path-banner {
+      font-size: 0.78rem;
+      padding: 0.45rem 0.55rem;
+      background: rgba(0, 0, 0, 0.22);
+      border-radius: 6px;
+      word-break: break-all;
+      border: 1px solid var(--border);
+    }
+    .col3-pane {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      background: rgba(0, 0, 0, 0.12);
+    }
+    .cover-pane {
+      flex: 0 0 auto;
+      max-height: 42vh;
+    }
+    .abd-pane {
+      flex: 1 1 auto;
+      min-height: 180px;
+    }
+    .pane-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: var(--muted);
+      padding: 0.4rem 0.55rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(0, 0, 0, 0.15);
+    }
+    .path-line {
+      font-size: 0.72rem;
+      color: var(--muted);
+      padding: 0.35rem 0.55rem;
+      word-break: break-all;
+      font-family: var(--mono);
+      border-bottom: 1px solid var(--border);
+    }
+    .path-line.path-line--standalone {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.12);
+    }
+    .cover-frame {
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 120px;
+      background: #121922;
+    }
+    .cover-frame img {
+      max-width: 100%;
+      max-height: 260px;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+    .muted-box {
+      font-size: 0.82rem;
+      color: var(--muted);
+      padding: 0.75rem;
+      text-align: center;
+    }
+    pre.abd-json-pre {
+      flex: 1;
+      margin: 0;
+      overflow: auto;
+      max-height: 48vh;
+      min-height: 120px;
+    }
+    .agent-toolbar {
+      flex-wrap: wrap;
+      padding: 0.15rem 0;
+    }
+    .agent-toolbar-hint {
+      margin: 0 0 0.35rem;
+      line-height: 1.35;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>收藏夹浏览（favorite → folder → brandGoodId → 封面图 + ABD）</h1>
+    <p>使用 login/status.json 中的登录态拉取酷家乐收藏夹</p>
+  </header>
+  <main>
+    <section>
+      <div class="sec-head">1 · 登录与目录</div>
+      <div class="sec-body">
+        <div class="toolbar toolbar-login">
+          <button type="button" id="btnBrowserLogin" title="{% if logged_in %}当前登录有效，可再次打开浏览器更新登录态{% else %}弹出 Chromium，由您手动输入账号密码登录{% endif %}">{% if logged_in %}已登录{% else %}打开浏览器登录{% endif %}</button>
+        </div>
+        <p class="hint hint-login">登录：弹出 Chromium 后自行输入账号密码；标题变为「已登录」后<strong>请手动关闭该窗口</strong>才会保存登录状态（勿在登录前关闭）。</p>
+        <div class="toolbar">
+          <button type="button" class="primary" id="btnFolders">加载收藏夹目录</button>
+        </div>
+        <div id="folderStatus"></div>
+        <ul class="items" id="folderList"></ul>
+        <p class="hint">data-tools 根目录：<span id="rootHint">{{ data_tools_root }}</span></p>
+        <p class="hint">商品导出目录：<span id="exportsRootHint">{{ exports_root }}</span></p>
+        <p class="hint">智能体输入目录：<code>{{ workspace_agent_input }}</code></p>
+      </div>
+    </section>
+    <section>
+      <div class="sec-head">2 · 目录内商品</div>
+      <div class="sec-body">
+        <div id="goodsPlaceholder" class="placeholder">请先加载目录并选择一个 folder。</div>
+        <div id="goodsStatus"></div>
+        <ul class="items" id="goodsList"></ul>
+      </div>
+    </section>
+    <section>
+      <div class="sec-head">3 · 导出文件（封面图、abd、参数列表、assembly）</div>
+      <div class="sec-body col3-stack">
+        <div id="col3Placeholder" class="placeholder">请选择一个商品；将写入封面图、abd.json、parammodel_param_list.json 与 assembly.json。</div>
+        <div id="col3Content" class="col3-stack" hidden>
+          <div class="path-banner" id="outputDirLine"></div>
+          <div class="path-line path-line--standalone" id="assemblyPathLine"></div>
+          <div class="path-line path-line--standalone" id="parammodelParamListPathLine"></div>
+          <div class="toolbar agent-toolbar">
+            <button type="button" class="primary" id="btnCopyToAgent">拷贝到智能体</button>
+          </div>
+          <p class="hint agent-toolbar-hint">
+            「拷贝」：先清空 workspace/tmp，再将 abd.json、cover→tmp/input/cover.jpg，以及 parammodel_param_list.json→tmp/input/param_current.json。
+          </p>
+          <div class="col3-pane cover-pane">
+            <div class="pane-label">封面图（本地文件）</div>
+            <div class="path-line" id="coverPathLine"></div>
+            <div class="cover-frame">
+              <img id="exportCoverImg" alt="封面图" hidden />
+              <span id="exportCoverMissing" class="muted-box" hidden>无封面图或未下载到本地</span>
+            </div>
+          </div>
+          <div class="col3-pane abd-pane">
+            <div class="pane-label">ABD 数据（abd.json）</div>
+            <div class="path-line" id="abdPathLine"></div>
+            <pre class="json-out abd-json-pre" id="abdJson"></pre>
+          </div>
+        </div>
+        <div id="asmStatus"></div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    let selectedFolderId = null;
+    let selectedFolderType = 4;
+    let selectedBrandGoodId = null;
+    let lastExportId = null;
+    let browserLoginPollTimer = null;
+
+    function esc(s) {
+      return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
+    /** 接口常为 //host/...，补成 https 供 img 使用 */
+    function normalizeHttpsUrl(raw) {
+      if (raw == null) return '';
+      const s = String(raw).trim();
+      if (!s) return '';
+      if (s.startsWith('//')) return 'https:' + s;
+      if (/^https?:\/\//i.test(s)) return s;
+      return '';
+    }
+
+    function appendGoodsThumb(wrap, url) {
+      wrap.classList.remove('placeholder-thumb');
+      clearEl(wrap);
+      if (!url) {
+        wrap.classList.add('placeholder-thumb');
+        wrap.textContent = '无预览图';
+        return;
+      }
+      const img = document.createElement('img');
+      img.className = 'goods-thumb';
+      img.alt = '';
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      img.src = url;
+      img.addEventListener(
+        'error',
+        function onErr() {
+          img.removeEventListener('error', onErr);
+          wrap.classList.add('placeholder-thumb');
+          clearEl(wrap);
+          wrap.textContent = '预览加载失败';
+        },
+        false,
+      );
+      wrap.appendChild(img);
+    }
+
+    function clearEl(el) {
+      while (el.firstChild) el.removeChild(el.firstChild);
+    }
+
+    function setStatus(el, type, text) {
+      clearEl(el);
+      if (!text) return;
+      const d = document.createElement('div');
+      d.className = 'status ' + (type === 'err' ? 'err' : 'ok');
+      d.textContent = text;
+      el.appendChild(d);
+    }
+
+    async function postJson(url, body) {
+      const r = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok || data.ok === false) {
+        const msg = (data && data.error) ? data.error : ('HTTP ' + r.status);
+        throw new Error(msg);
+      }
+      return data;
+    }
+
+    function payloadBase() {
+      return {};
+    }
+
+    function resetCol3() {
+      $('col3Placeholder').hidden = false;
+      $('col3Content').hidden = true;
+      $('outputDirLine').textContent = '';
+      $('assemblyPathLine').textContent = '';
+      $('parammodelParamListPathLine').textContent = '';
+      $('coverPathLine').textContent = '';
+      $('abdPathLine').textContent = '';
+      $('abdJson').textContent = '';
+      const img = $('exportCoverImg');
+      img.hidden = true;
+      img.removeAttribute('src');
+      $('exportCoverMissing').hidden = true;
+      setStatus($('asmStatus'), '', '');
+      lastExportId = null;
+    }
+
+    function stopBrowserLoginPoll() {
+      if (browserLoginPollTimer != null) {
+        clearInterval(browserLoginPollTimer);
+        browserLoginPollTimer = null;
+      }
+    }
+
+    function setBrowserLoginButtonLabel(loggedIn) {
+      const btn = $('btnBrowserLogin');
+      if (loggedIn) {
+        btn.textContent = '已登录';
+        btn.title = '当前登录有效，可再次打开浏览器更新登录态';
+      } else {
+        btn.textContent = '打开浏览器登录';
+        btn.title = '弹出 Chromium，由您手动输入账号密码登录';
+      }
+    }
+
+    async function refreshBrowserLoginButton() {
+      try {
+        const r = await fetch('/api/browser-login/check');
+        const data = await r.json().catch(() => ({}));
+        setBrowserLoginButtonLabel(Boolean(r.ok && data.ok));
+      } catch (_) {
+        setBrowserLoginButtonLabel(false);
+      }
+    }
+
+    async function pollBrowserLoginStatus() {
+      try {
+        const r = await fetch('/api/browser-login/status');
+        const data = await r.json();
+        const st = data.status || 'idle';
+        if (st === 'running') {
+          let hint = data.message || '等待浏览器中登录…';
+          if (data.phase) hint += ' · ' + data.phase;
+          setStatus($('folderStatus'), 'ok', hint);
+          return;
+        }
+        if (st === 'idle') {
+          stopBrowserLoginPoll();
+          $('btnBrowserLogin').disabled = false;
+          $('btnFolders').disabled = false;
+          return;
+        }
+        stopBrowserLoginPoll();
+        $('btnBrowserLogin').disabled = false;
+        $('btnFolders').disabled = false;
+        if (st === 'success') {
+          const msg = (data.result && data.result.message) || data.message || '登录状态已更新';
+          setStatus($('folderStatus'), 'ok', msg + ' · 可点击「加载收藏夹目录」');
+          refreshBrowserLoginButton();
+        } else if (st === 'error') {
+          setStatus($('folderStatus'), 'err', data.error || '登录更新失败');
+        }
+      } catch (e) {
+        stopBrowserLoginPoll();
+        $('btnBrowserLogin').disabled = false;
+        $('btnFolders').disabled = false;
+        setStatus($('folderStatus'), 'err', String(e.message || e));
+      }
+    }
+
+    $('btnBrowserLogin').addEventListener('click', async () => {
+      const btn = $('btnBrowserLogin');
+      stopBrowserLoginPoll();
+      btn.disabled = true;
+      $('btnFolders').disabled = true;
+      setStatus($('folderStatus'), 'ok', '正在检查登录状态…');
+      try {
+        const checkRes = await fetch('/api/browser-login/check');
+        const checkData = await checkRes.json().catch(() => ({}));
+        if (!checkRes.ok || checkData.ok === false) {
+          setStatus($('folderStatus'), 'ok', checkData.message || checkData.error || '需要登录');
+          // 继续启动浏览器登录
+        } else {
+          setStatus($('folderStatus'), 'ok', '登录状态有效，正在启动浏览器…');
+        }
+        const startRes = await fetch('/api/browser-login/start', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            waitTimeout: 600,
+          }),
+        });
+        const startData = await startRes.json().catch(() => ({}));
+        if (!startRes.ok || startData.ok === false) {
+          setStatus($('folderStatus'), 'err', startData.error || startData.message || ('HTTP ' + startRes.status));
+          btn.disabled = false;
+          $('btnFolders').disabled = false;
+          return;
+        }
+        setStatus($('folderStatus'), 'ok', startData.message || '请在弹出窗口中登录');
+        browserLoginPollTimer = setInterval(pollBrowserLoginStatus, 1500);
+        pollBrowserLoginStatus();
+      } catch (e) {
+        btn.disabled = false;
+        $('btnFolders').disabled = false;
+        setStatus($('folderStatus'), 'err', String(e.message || e));
+      }
+    });
+
+    $('btnFolders').addEventListener('click', async () => {
+      const btn = $('btnFolders');
+      btn.disabled = true;
+      setStatus($('folderStatus'), 'ok', '加载中…');
+      clearEl($('folderList'));
+      resetCol3();
+      $('goodsPlaceholder').hidden = false;
+      clearEl($('goodsList'));
+      setStatus($('goodsStatus'), '', '');
+      selectedFolderId = null;
+      selectedBrandGoodId = null;
+      try {
+        const data = await postJson('/api/folders', { ...payloadBase(), timeout: 60 });
+        setStatus($('folderStatus'), 'ok', '已加载 ' + data.folders.length + ' 个目录');
+        const ul = $('folderList');
+        data.folders.forEach((f) => {
+          const li = document.createElement('li');
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'item';
+          b.dataset.folderId = String(f.folderId);
+          if (f.folderType != null && f.folderType !== '') {
+            b.dataset.folderType = String(f.folderType);
+          }
+          b.innerHTML =
+            '<div class="item-title">' + esc(f.name || '(未命名)') + '</div>' +
+            '<div class="item-sub">folderId=' + esc(f.folderId) +
+            (f.folderType != null ? ' · type=' + esc(f.folderType) : '') +
+            '</div>';
+          b.addEventListener('click', () => selectFolder(b, f.folderId, f.folderType));
+          li.appendChild(b);
+          ul.appendChild(li);
+        });
+      } catch (e) {
+        setStatus($('folderStatus'), 'err', String(e.message || e));
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    function selectFolder(btnEl, folderId, folderType) {
+      document.querySelectorAll('#folderList button.item').forEach((b) => b.classList.remove('active'));
+      btnEl.classList.add('active');
+      selectedFolderId = String(folderId);
+      selectedFolderType =
+        folderType != null && folderType !== ''
+          ? Number(folderType)
+          : 4;
+      if (!Number.isFinite(selectedFolderType)) selectedFolderType = 4;
+      selectedBrandGoodId = null;
+      loadGoods();
+    }
+
+    async function loadGoods() {
+      if (!selectedFolderId) return;
+      $('goodsPlaceholder').hidden = true;
+      setStatus($('goodsStatus'), 'ok', '加载商品列表…');
+      clearEl($('goodsList'));
+      resetCol3();
+      try {
+        const data = await postJson('/api/folder-goods', {
+          ...payloadBase(),
+          folderId: selectedFolderId,
+          foldertype: selectedFolderType,
+          timeout: 60,
+        });
+        const n = data.goods.length;
+        const hint = data.count != null ? ('（接口 count=' + data.count + '）') : '';
+        setStatus($('goodsStatus'), 'ok', '共 ' + n + ' 条商品 ' + hint + ' · ' + data.fetchPath);
+        const ul = $('goodsList');
+        data.goods.forEach((g) => {
+          const li = document.createElement('li');
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'item goods-item';
+          b.dataset.bgId = String(g.brandGoodId);
+
+          const thumbWrap = document.createElement('span');
+          thumbWrap.className = 'goods-thumb-wrap';
+          appendGoodsThumb(
+            thumbWrap,
+            normalizeHttpsUrl(g.coverImgUrl) || normalizeHttpsUrl(g.previewImgUrl),
+          );
+
+          const meta = document.createElement('span');
+          meta.className = 'goods-meta';
+          const titleEl = document.createElement('div');
+          titleEl.className = 'item-title';
+          titleEl.textContent = g.name || '(未命名)';
+          const subEl = document.createElement('div');
+          subEl.className = 'item-sub';
+          let sub = 'brandGoodId=' + String(g.brandGoodId);
+          if (g.obsBrandGoodId) sub += ' · obs=' + String(g.obsBrandGoodId);
+          subEl.textContent = sub;
+          meta.appendChild(titleEl);
+          meta.appendChild(subEl);
+
+          b.appendChild(thumbWrap);
+          b.appendChild(meta);
+          b.addEventListener('click', () => selectGood(b, g.brandGoodId));
+          li.appendChild(b);
+          ul.appendChild(li);
+        });
+      } catch (e) {
+        $('goodsPlaceholder').hidden = false;
+        setStatus($('goodsStatus'), 'err', String(e.message || e));
+      }
+    }
+
+    function selectGood(btnEl, brandGoodId) {
+      document.querySelectorAll('#goodsList button.item').forEach((b) => b.classList.remove('active'));
+      btnEl.classList.add('active');
+      selectedBrandGoodId = brandGoodId;
+      loadExportAbd();
+    }
+
+    async function loadExportAbd() {
+      if (selectedBrandGoodId == null || !selectedFolderId) return;
+      $('col3Placeholder').hidden = true;
+      $('col3Content').hidden = true;
+      setStatus($('asmStatus'), 'ok', '导出 ABD、assembly.json 与封面图…');
+      try {
+        const data = await postJson('/api/export-abd', {
+          ...payloadBase(),
+          folderId: selectedFolderId,
+          foldertype: selectedFolderType,
+          brandGoodId: selectedBrandGoodId,
+          timeout: 120,
+          zstdLevel: 1,
+        });
+        $('outputDirLine').textContent = '输出目录：' + data.outputDir;
+        $('assemblyPathLine').textContent =
+          '装配 attach 原始 JSON（assembly.json）：' + (data.assemblyJsonPath || '');
+        $('parammodelParamListPathLine').textContent =
+          '单元柜参数列表（parammodel_param_list.json）：' + (data.parammodelParamListPath || '');
+        $('abdPathLine').textContent = data.abdJsonPath || '';
+        $('coverPathLine').textContent =
+          data.coverImagePath ||
+          '(未生成封面文件 · 收藏列表无可用封面 URL 或下载失败)';
+
+        const img = $('exportCoverImg');
+        const miss = $('exportCoverMissing');
+        img.onerror = function () {
+          img.hidden = true;
+          miss.hidden = false;
+          miss.textContent = '本地封面图加载失败（可检查磁盘上文件是否完整）';
+        };
+        if (data.coverUrl) {
+          miss.hidden = true;
+          img.hidden = false;
+          img.src = data.coverUrl;
+        } else {
+          img.hidden = true;
+          img.removeAttribute('src');
+          miss.hidden = false;
+          miss.textContent = '无封面图文件（接口未返回 URL 或下载失败）';
+        }
+
+        $('abdJson').textContent = JSON.stringify(data.abd, null, 2);
+        $('col3Content').hidden = false;
+        lastExportId = data.exportId || null;
+
+        let msg = '已写入上述目录（exportId=' + (data.exportId || '') + '）';
+        if (data.coverDownloadError) {
+          msg += ' · 封面下载警告：' + data.coverDownloadError;
+        }
+        setStatus($('asmStatus'), 'ok', msg);
+      } catch (e) {
+        resetCol3();
+        setStatus($('asmStatus'), 'err', String(e.message || e));
+      }
+    }
+
+    $('btnCopyToAgent').addEventListener('click', async () => {
+      if (!lastExportId) {
+        setStatus($('asmStatus'), 'err', '请先导出商品以生成 exportId');
+        return;
+      }
+      const btn = $('btnCopyToAgent');
+      btn.disabled = true;
+      try {
+        const data = await postJson('/api/copy-to-agent', { exportId: lastExportId });
+        let msg = '已拷贝到智能体';
+        if (data.tmpCleared && data.tmpCleared.length) {
+          msg += '（已清空 tmp：' + data.tmpCleared.join('、') + '）';
+        }
+        msg +=
+          '：abd→' + (data.abdDest || '') +
+          '；参数列表→' + (data.paramCurrentValueDest || '');
+        if (data.coverDest) msg += '；封面→' + data.coverDest;
+        if (data.coverWarn) msg += ' · ' + data.coverWarn;
+        setStatus($('asmStatus'), 'ok', msg);
+      } catch (e) {
+        setStatus($('asmStatus'), 'err', String(e.message || e));
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    refreshBrowserLoginButton();
+  </script>
+</body>
+</html>

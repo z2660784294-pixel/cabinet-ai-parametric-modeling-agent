@@ -1,0 +1,54 @@
+{
+  "basic_info": {
+    "W": 2200,
+    "H": 2400,
+    "D": 550,
+    "total_bay_count": 4,
+    "unit_count_main": 3
+  },
+
+  "units": [
+    {
+      "slot": 1,
+      "type": "边柜",
+      "obsBrandGoodId": "",
+      "door_count": 2,
+      "bay_count": 1,
+      "drawer_count": 0,
+      "has_open_shelf": true,
+      "est_width": 400,
+      "est_height": 2400,
+      "position": "最左侧（占第1分格，边柜）",
+      "handle_style": "无拉手",
+      "summary": "左侧通高边柜；上面一个门，中间2格开放层架，下面一个门"
+    },
+    {
+      "slot": 2,
+      "type": "高柜/下柜",
+      "obsBrandGoodId": "",
+      "door_count": 2,
+      "bay_count": 1,
+      "drawer_count": 0,
+      "has_open_shelf": false,
+      "est_width": 600,
+      "est_height": 2400,
+      "position": "左数第2个（占第2分格）",
+      "handle_style": "单拉手（侧缝）",
+      "summary": "单柜通高柜；上下两个门。"
+    },
+    {
+      "slot": 3,
+      "type": "高柜/下柜",
+      "obsBrandGoodId": "",
+      "door_count": 2,
+      "bay_count": 2,
+      "drawer_count": 3,
+      "has_open_shelf": false,
+      "est_width": 1200,
+      "est_height": 2400,
+      "position": "右侧（占第3-4分格）",
+      "handle_style": "侧缝拉手",
+      "summary": "双门带抽通高柜；上段两扇白门对开，下段3层横向抽屉叠装。"
+    }
+  ]
+}

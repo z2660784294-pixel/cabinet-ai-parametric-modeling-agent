@@ -1,0 +1,6 @@
+# Exclude session temp files from agent context and codebase indexing
+tmp/
+data/
+examples/
+ui_tools/
+utils/

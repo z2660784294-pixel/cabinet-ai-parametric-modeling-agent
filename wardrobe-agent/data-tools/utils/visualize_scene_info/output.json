@@ -1,0 +1,170 @@
+{
+  "modelInstances": [
+    {
+      "instanceId": "1",
+      "name": "【1门常规高柜】V1",
+      "obsBrandGoodId": "3FO3PVT9KS3Y",
+      "bbox": {
+        "min": {
+          "x": 0,
+          "y": -190,
+          "z": 0
+        },
+        "max": {
+          "x": 450,
+          "y": 210,
+          "z": 2400
+        }
+      }
+    },
+    {
+      "instanceId": "2",
+      "name": "【6门台面柜】V1",
+      "obsBrandGoodId": "3FO3PVPS2TG1",
+      "bbox": {
+        "min": {
+          "x": 450,
+          "y": -190,
+          "z": 0
+        },
+        "max": {
+          "x": 3150,
+          "y": 210,
+          "z": 248
+        }
+      }
+    },
+    {
+      "instanceId": "3",
+      "name": "【替换墙板】V0",
+      "obsBrandGoodId": "3FO3Q5WFSS8R",
+      "bbox": {
+        "min": {
+          "x": 450,
+          "y": -190,
+          "z": 248
+        },
+        "max": {
+          "x": 3150,
+          "y": 210,
+          "z": 608
+        }
+      }
+    },
+    {
+      "instanceId": "4",
+      "name": "【框架吊柜】V1",
+      "obsBrandGoodId": "3FO3PVSW7G7D",
+      "bbox": {
+        "min": {
+          "x": 900,
+          "y": -210,
+          "z": 608
+        },
+        "max": {
+          "x": 2700,
+          "y": 210,
+          "z": 1608
+        }
+      }
+    },
+    {
+      "instanceId": "5",
+      "name": "【1门吊柜】V1",
+      "obsBrandGoodId": "3FO3PVPLUOA3",
+      "bbox": {
+        "min": {
+          "x": 450,
+          "y": -190,
+          "z": 608
+        },
+        "max": {
+          "x": 900,
+          "y": 210,
+          "z": 2400
+        }
+      }
+    },
+    {
+      "instanceId": "6",
+      "name": "【4门吊柜】V1",
+      "obsBrandGoodId": "3FO3PVSQRFMJ",
+      "bbox": {
+        "min": {
+          "x": 900,
+          "y": -190,
+          "z": 1608
+        },
+        "max": {
+          "x": 2700,
+          "y": 210,
+          "z": 2400
+        }
+      }
+    },
+    {
+      "instanceId": "8",
+      "name": "【1门吊柜】V1",
+      "obsBrandGoodId": "3FO3PVPLUOA3",
+      "bbox": {
+        "min": {
+          "x": 2700,
+          "y": -190,
+          "z": 608
+        },
+        "max": {
+          "x": 3150,
+          "y": 210,
+          "z": 2400
+        }
+      }
+    },
+    {
+      "instanceId": "9",
+      "name": "【通用收口-智】V1",
+      "obsBrandGoodId": "3FO3JYMG5N1F",
+      "bbox": {
+        "min": {
+          "x": 0,
+          "y": -190,
+          "z": 0
+        },
+        "max": {
+          "x": 3150,
+          "y": 210,
+          "z": 2400
+        }
+      }
+    }
+  ],
+  "bboxOverlaps": [
+    {
+      "model1": "【1门常规高柜】V1",
+      "model2": "【通用收口-智】V1"
+    },
+    {
+      "model1": "【6门台面柜】V1",
+      "model2": "【通用收口-智】V1"
+    },
+    {
+      "model1": "【替换墙板】V0",
+      "model2": "【通用收口-智】V1"
+    },
+    {
+      "model1": "【框架吊柜】V1",
+      "model2": "【通用收口-智】V1"
+    },
+    {
+      "model1": "【1门吊柜】V1",
+      "model2": "【通用收口-智】V1"
+    },
+    {
+      "model1": "【4门吊柜】V1",
+      "model2": "【通用收口-智】V1"
+    },
+    {
+      "model1": "【1门吊柜】V1",
+      "model2": "【通用收口-智】V1"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "parameditor": {
+      "timeout": 60,
+      "type": "http",
+      "url": "http://localhost:7764/sse"
+    }
+  }
+}

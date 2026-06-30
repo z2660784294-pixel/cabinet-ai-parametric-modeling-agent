@@ -1,0 +1,6 @@
+node_modules
+logs
+locks
+cache
+model_data/assemblyCase
+model_data/unitCase

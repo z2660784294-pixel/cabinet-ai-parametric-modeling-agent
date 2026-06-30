@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>组合柜候选确认页</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page">
+    <main class="workspace">
+      <section class="reference-panel" aria-label="输入信息">
+        <div class="panel-title">输入图片</div>
+        <div class="input-image-wrap">
+          <div id="referenceFallback" class="reference-fallback">暂无输入图片</div>
+          <img id="referenceImage" class="reference-image" alt="输入图片">
+        </div>
+        <div class="description-wrap">
+          <div class="panel-title">描述</div>
+          <div id="descriptionText" class="description-text"></div>
+        </div>
+        <div class="cabinet-size-wrap">
+          <div class="panel-title">组合柜尺寸</div>
+          <label class="size-field">
+            <span>宽</span>
+            <input id="cabinetWidthInput" type="number" min="1" step="1" inputmode="decimal">
+          </label>
+          <label class="size-field">
+            <span>高</span>
+            <input id="cabinetHeightInput" type="number" min="1" step="1" inputmode="decimal">
+          </label>
+        </div>
+        <button id="confirmButton" type="button" class="primary confirm-button">确认</button>
+      </section>
+
+      <section class="stage-column" aria-label="组合柜编辑画布">
+        <div class="panel-title">单元柜筛选和布局</div>
+        <div id="stage" class="stage">
+          <canvas id="layoutCanvas" class="layout-canvas"></canvas>
+          <div id="cellToolbar" class="cell-toolbar hidden" aria-label="单元格操作工具">
+            <button data-action="add-up" type="button" class="tool-btn add-up" title="向上添加">+</button>
+            <button data-action="add-down" type="button" class="tool-btn add-down" title="向下添加">+</button>
+            <button data-action="add-left" type="button" class="tool-btn add-left" title="向左添加">+</button>
+            <button data-action="add-right" type="button" class="tool-btn add-right" title="向右添加">+</button>
+            <div id="cellCenterActions" class="center-actions">
+              <button data-action="replace" type="button" class="tool-btn center-btn replace" title="更换图片展位">换</button>
+              <button data-action="clear" type="button" class="tool-btn center-btn clear" title="清除图片展位">清</button>
+              <button data-action="delete" type="button" class="tool-btn center-btn delete" title="删除整行或整列">删格</button>
+              <button data-action="merge" type="button" class="tool-btn center-btn merge" title="合并单元格">合</button>
+              <button data-action="split" type="button" class="tool-btn center-btn split" title="拆分单元格">拆</button>
+            </div>
+          </div>
+        </div>
+        <div class="hint">单击选中；Shift+单击选择区域；拖拽内部边框调整整行/整列；可合并/拆分；Esc 取消选中。</div>
+      </section>
+    </main>
+  </div>
+
+  <div id="replaceModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="replaceTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h2 id="replaceTitle">替换单元柜</h2>
+          <p>选择后只更新当前单元格或合并单元格的 obsBrandGoodId 与预览图。</p>
+        </div>
+        <button id="closeReplaceButton" type="button" class="ghost">关闭</button>
+      </div>
+      <input id="replaceSearch" class="search" type="search" placeholder="搜索名称、bgid 或 layout_notes">
+      <div id="replaceList" class="replace-list"></div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

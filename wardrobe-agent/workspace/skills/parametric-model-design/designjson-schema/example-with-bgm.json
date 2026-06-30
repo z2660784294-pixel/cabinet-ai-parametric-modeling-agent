@@ -1,0 +1,355 @@
+{
+    "name": "组合",
+    "parentParams": [
+        {
+            "displayName": "组合柜总宽",
+            "max": "4000",
+            "min": "1200",
+            "name": "W",
+            "paramTypeId": 1,
+            "value": "2318",
+            "valueType": "float"
+        },
+        {
+            "displayName": "组合柜总深",
+            "max": "1200",
+            "min": "10",
+            "name": "D",
+            "paramTypeId": 1,
+            "value": "570",
+            "valueType": "float"
+        },
+        {
+            "displayName": "组合柜总高",
+            "max": "3000",
+            "min": "10",
+            "name": "H",
+            "paramTypeId": 1,
+            "value": "2060",
+            "valueType": "float"
+        },
+        {
+            "displayName": "外观镜像",
+            "name": "WGJX",
+            "paramTypeId": 2,
+            "value": "0",
+            "valueType": "string",
+            "editorOptions": [
+                {
+                    "name": "左",
+                    "value": "0"
+                },
+                {
+                    "name": "右",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "displayName": "左收口样式",
+            "name": "SKYS_L",
+            "paramTypeId": 2,
+            "value": "1",
+            "valueType": "string",
+            "editorOptions": [
+                {
+                    "name": "无",
+                    "value": "0"
+                },
+                {
+                    "name": "有",
+                    "value": "1"
+                },
+                {
+                    "name": "见光板",
+                    "value": "2"
+                },
+                {
+                    "name": "侧收口",
+                    "value": "3"
+                }
+            ]
+        },
+        {
+            "displayName": "右收口样式",
+            "name": "SKYS_R",
+            "paramTypeId": 2,
+            "value": "2",
+            "valueType": "string",
+            "editorOptions": [
+                {
+                    "name": "无",
+                    "value": "0"
+                },
+                {
+                    "name": "有",
+                    "value": "1"
+                },
+                {
+                    "name": "见光板",
+                    "value": "2"
+                },
+                {
+                    "name": "侧收口",
+                    "value": "3"
+                }
+            ]
+        },
+        {
+            "displayName": "左收口宽度",
+            "formula": "#SKYS_L=='0' OR #WGJX=='1'?0:#SKYS_L=='1'?50:18",
+            "name": "SK_L",
+            "paramTypeId": 5,
+            "value": "",
+            "valueType": "float"
+        },
+        {
+            "displayName": "右收口宽度",
+            "formula": "#SKYS_R=='0' OR #WGJX=='0'?0:#SKYS_R=='1'?50:18",
+            "name": "SK_R",
+            "paramTypeId": 5,
+            "value": "",
+            "valueType": "float"
+        },
+        {
+            "displayName": "边柜宽",
+            "max": "1200",
+            "min": "100",
+            "name": "BGW",
+            "paramTypeId": 1,
+            "value": "450",
+            "valueType": "float"
+        },
+        {
+            "displayName": "1号柜（左双门）宽",
+            "formula": "(#W-#SK_L-#SK_R-#BGW)/2",
+            "max": "1199",
+            "min": "299",
+            "name": "QYW1",
+            "paramTypeId": 4,
+            "status": 1,
+            "value": "0",
+            "valueType": "float"
+        },
+        {
+            "displayName": "2号柜（右双门）宽",
+            "formula": "(#W-#SK_L-#SK_R-#BGW)/2",
+            "max": "1199",
+            "min": "299",
+            "name": "QYW2",
+            "paramTypeId": 4,
+            "status": 1,
+            "value": "0",
+            "valueType": "float"
+        },
+        {
+            "displayName": "我的样式",
+            "name": "YSBL",
+            "paramTypeId": 0,
+            "value": "{\"obsBrandGoodId\":\"3FO3LEDJYG4C\",\"versionId\":0}",
+            "valueType": "style"
+        },
+        {
+            "displayName": "我的材质",
+            "name": "CZBL",
+            "paramTypeId": 0,
+            "value": "3FO3WBH547SJ",
+            "valueType": "material"
+        },
+        {
+            "displayName": "收口材质选择",
+            "group": "▶收口设置-组◀",
+            "ignore": "",
+            "max": "",
+            "min": "",
+            "name": "Z_QSKCZ",
+            "paramTypeId": 2,
+            "value": "1",
+            "valueType": "float",
+            "editorOptions": [
+                {
+                    "name": "柜体色",
+                    "value": "0"
+                },
+                {
+                    "name": "门板色",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "displayName": "样式枚举",
+            "link": "3FO4K7CQ6O0P",
+            "linkForm": "0",
+            "name": "YSBL_ENUM",
+            "paramTypeId": 2,
+            "value": "{\"obsBrandGoodId\":\"3FO3JPJBAOR0\",\"versionId\":2}",
+            "valueType": "style"
+        },
+        {
+            "displayName": "截面轮廓",
+            "name": "PROFILE",
+            "paramTypeId": 0,
+            "value": "3FO3JWQIRM4X",
+            "valueType": "shape"
+        },
+        {
+            "displayName": "固定截面",
+            "name": "PROFILE_FIX",
+            "paramTypeId": 6,
+            "value": "3FO3JWQIRM4X",
+            "valueType": "shape"
+        },
+        {
+            "displayName": "轮廓样式",
+            "link": "3FO4K5T6QLJ2",
+            "linkForm": "0",
+            "name": "PROFILE_ENUM",
+            "paramTypeId": 2,
+            "value": "3FO40HN8PCFQ",
+            "valueType": "shape"
+        },
+        {
+            "displayName": "复合公式-值",
+            "formula": "#W+#D",
+            "group": "自定义变量",
+            "ignore": "",
+            "max": "99",
+            "min": "0",
+            "name": "COMP_VALUE",
+            "paramTypeId": 4,
+            "status": 0,
+            "value": "60",
+            "valueType": "float"
+        },
+        {
+            "displayName": "公式可选-值",
+            "formula": "#W+#D",
+            "group": "自定义变量",
+            "ignore": "",
+            "max": "",
+            "min": "",
+            "name": "GSKX",
+            "paramTypeId": 7,
+            "status": 0,
+            "value": "20",
+            "valueType": "float",
+            "editorOptions": [
+                {
+                    "name": "20",
+                    "value": "20"
+                },
+                {
+                    "name": "30",
+                    "value": "30"
+                }
+            ]
+        },
+        {
+            "displayName": "左收口款式",
+            "formula": {
+                "cases": [
+                    {
+                        "condition": "#W==200",
+                        "value": "{\"obsBrandGoodId\":\"3FO3NGURA302\",\"versionId\":10}"
+                    },
+                    {
+                        "condition": "#W==300",
+                        "value": "{\"obsBrandGoodId\":\"3FO3K04GWD9L\",\"versionId\":6}"
+                    }
+                ],
+                "defaultValue": "{\"obsBrandGoodId\":\"3FO3NGTYT0MM\",\"versionId\":5}"
+            },
+            "formulaForm": 1,
+            "group": "▶左收口设置-组◀",
+            "ignore": "",
+            "link": "3FO4K7M0BUAQ",
+            "linkForm": 0,
+            "max": "",
+            "min": "",
+            "name": "Z_ZSKKS",
+            "paramTypeId": 4,
+            "status": 1,
+            "value": "{\"obsBrandGoodId\":\"3FO3NGTYT0MM\",\"versionId\":5}",
+            "valueType": "style"
+        },
+        {
+            "displayName": "四边显示",
+            "name": "SK_XZ",
+            "paramTypeId": 0,
+            "value": "5",
+            "valueType": "booleanlist",
+            "valueDisplayNames": [
+                "左",
+                "右",
+                "前",
+                "后"
+            ]
+        }
+    ],
+    "units": [
+        {
+            "label": "右边柜【右边下柜101（智能设计）】",
+            "id": "37E8E5DA-7444-473D-87AC-E130FD9EEB4A",
+            "obsBrandGoodId": "3FO3JCW47DO2",
+            "paramSuffix": "0",
+            "position": [
+                "#WGJX=='0'?#SK_L:#SK_L+#QYW1+#QYW2",
+                "0",
+                "0"
+            ],
+            "rotation": [
+                "0",
+                "0",
+                "0"
+            ],
+            "size": {
+                "D": "#D",
+                "H": "#H",
+                "W": "#BGW"
+            }
+        },
+        {
+            "label": "双门衣柜下柜127（智能设计）",
+            "id": "4BD1969E-33D8-4AD3-856F-A152F6466C81",
+            "obsBrandGoodId": "3FO3JCW3MVK8",
+            "paramSuffix": "1",
+            "position": [
+                "#WGJX=='0'?#SK_L+#BGW:#SK_L",
+                "0",
+                "0"
+            ],
+            "rotation": [
+                "0",
+                "0",
+                "0"
+            ],
+            "size": {
+                "D": "#D",
+                "H": "#H",
+                "W": "#QYW1"
+            }
+        },
+        {
+            "label": "双门衣柜下柜113",
+            "id": "E4749CA1-2A1B-49C1-8105-4D99870870E6",
+            "obsBrandGoodId": "3FO3JCW3K7XF",
+            "paramSuffix": "2",
+            "position": [
+                "#WGJX=='0'?#SK_L+#BGW+#QYW1:#SK_L+#QYW2",
+                "0",
+                "0"
+            ],
+            "rotation": [
+                "0",
+                "0",
+                "0"
+            ],
+            "size": {
+                "D": "#D",
+                "H": "#H",
+                "W": "#QYW2"
+            }
+        }
+    ]
+}
